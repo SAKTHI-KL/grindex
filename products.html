@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GRINDEX PRODUCTS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="wrstyles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+  </head>
+  <style>
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+
+  </style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" style="position:fixed">
+  <div class="w3-bar w3-black w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <span class="company-name"><b>GRINDEX ENGINEERING COMPANY</b></span>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#" class="w3-bar-item w3-button">HOME</a>
+      <!-- <a href="#customers" class="w3-bar-item w3-button"><i class="fa fa-th"></i> CUSTOMERS</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>  -->
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" style="background-color: rgba(78, 255, 78, 0.559);" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <!-- <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#customers" onclick="w3_close()" class="w3-bar-item w3-button">CUSTOMERS</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a> -->
+</nav>
+
+<!-- slide image
+
+<div class="slideshow-container w3-pale-green">
+
+  <div class="mySlides fade">
+    <img src="images/img1.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="images/img2.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="images/img3.jpg" style="width:100%">
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div> -->
+
+
+
+<div class="w3-container w3-padding-64 w3-light-grey " >
+  <div class="w3-row">
+    <div class="w3-container w3-threequarter" ></div>
+    <!-- Contact Section -->
+    <div class="w3-container w3-quarter">
+      <h3 class="w3-center"><b>CONTACT</b></h3>
+      <p class="w3-center w3-large"><b>Lets get in touch.</b></p>
+      <div class="w3-row">
+        <div class="w3-container w3-margin-bottom" style="padding: 0px 0px;" >
+          <div class="w3-container w3-pale-green w3-card-4 w3-round">
+            <p class="w3-animate-zoom w3-large" ><b>Write to us for any Queries / Quote Request</b></p>
+            <form id="contactForm" onsubmit="sendEmail(); reset(); return false" method="POST">
+              <p><input class="w3-input w3-border" id="name" type="text" placeholder="Name" required name="name"></p>
+              <p><input class="w3-input w3-border" id="email" type="email" placeholder="Email" required name="email"></p>
+              <p><input class="w3-input w3-border" id="phone" type="tel" placeholder="Mobile Number" required name="phone"></p>
+              <p><textarea class="w3-input w3-border" id="message" placeholder="Message" style="height: 178px;" required name="message"></textarea></p>
+              <p>
+                <button class="w3-button w3-black" type="submit">
+                  <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+              </p>
+            </form>
+            
+            <div class="popup w3-card-4" id="popup">
+              <p class="w3-animate-zoom" ><b>Thank you for the submission, we'll reach u soon!</b></p>
+              <p class="w3-center"><button class="w3-button w3-black w3-animate-zoom" onclick="hidePopup()"> OK </button></p>
+            </div>
+
+            <div class="popoverlay" id="overlay"></div>
+
+          </div> 
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>
+
+
+<!-- <p class="w3-center"><a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a></p> -->
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-dark-grey w3-padding-16">
+  <div class="w3-container">
+    
+    <div class="w3-row desktopview">
+      <div class="w3-half w3-container w3-margin-bottom" >
+        <h3 class="w3-center" ><b>ABOUT</b></h3>
+        <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
+      </div>
+      <div class="w3-container w3-col s4 w3-margin-bottom">
+
+      </div>
+      <div class="w3-container w3-col s1 w3-margin-bottom">
+        <div class="w3-xlarge w3-section">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </div>
+    </div>
+    <p class="w3-center w3-margin small w3-text-white">©2024, Geindex Engineering Company. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script src="javascript.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</body>
+</html>
