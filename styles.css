@@ -15,7 +15,7 @@ body, html {
 }
 
 .transparent-container {
-  background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity (last value) as needed */
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 25%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.8) 75%, rgba(0,0,0,1) 100%);
   
 }
 
@@ -40,6 +40,12 @@ body, html {
   max-width: 100%;
   position: relative;
   margin: auto;
+}
+
+.logo-img{
+  float: left;
+  position: relative;
+  padding: 5px 5px;
 }
     
 /* Next & previous buttons */
@@ -72,9 +78,18 @@ body, html {
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
 }
 
+.theight{
+  height: 600px;
+}
+
+#contact{
+  position: fixed;
+  right: 0%;
+  padding-top: 20px;
+}
 
 @keyframes fade {
   from {opacity: .4} 
@@ -84,7 +99,7 @@ body, html {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 360px) {
   .prev, .next{font-size: 11px}
-}
+  }
 
 @media screen and (max-width: 768px) {
   .company-name{
@@ -93,6 +108,16 @@ body, html {
   .desktopview{
     display: none;
   }
+  .theight{
+    height: 400px;
+  }
+  #contact{
+    position:relative;
+  }
+  
+}
+@media only screen and (min-width: 768px){
+  
 }
 
 .popup {
@@ -118,3 +143,23 @@ body, html {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
 }
+
+.gradient-green{color:#000!important;background: linear-gradient(90deg, rgb(0, 166, 0, 1) 0%, rgb(24, 229, 24,1) 25%, rgb(79, 255, 79,1) 50%, rgba(24, 229, 24,1) 75%, rgba(0, 166, 0, 1) 100%)!important}
+.gradient-gray{color:#000!important;background: linear-gradient(90deg, rgba(214,214,214,1) 0%, rgba(241,241,241,1) 25%, rgba(255,255,255,1) 50%, rgba(241,241,241,1) 75%, rgba(214,214,214,1) 100%)!important}
+
+
+/* table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2} */
+
+

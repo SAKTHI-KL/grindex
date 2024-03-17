@@ -27,6 +27,7 @@ function w3_close() {
 let slideIndex = 0;
 showSlides();
 
+
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -55,14 +56,14 @@ function sendEmail(){
 }
 
 // Function to display the popup
-function displayPopup() {
-  document.getElementById("popup").style.display = "block";
+function displayPopup(n) {
+  document.getElementById("popup"+n).style.display = "block";
   document.getElementById("overlay").style.display = "block";
 }
 
 // Function to hide the popup
-function hidePopup() {
-  document.getElementById("popup").style.display = "none";
+function hidePopup(n) {
+  document.getElementById("popup"+n).style.display = "none";
   document.getElementById("overlay").style.display = "none";
 }
 
@@ -72,6 +73,6 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 
   // Here you would typically submit the form data to a server using AJAX or fetch
   // For this example, we'll just display the popup
-  displayPopup();
+  displayPopup(0);
   
 });
