@@ -42,17 +42,19 @@ function showSlides() {
 
 function sendEmail(){
   Email.send({
-    Host : "smtp.gmail.com",
+    Host : "smtp.elasticemail.com",
     Username : "slkarthi9@gmail.com",
-    Password : "fwwn focp efip dhlp",
+    Password : "9F40E5C512A806E1C4FA4CDDFDE29112AD5D",
     To : 'lsakthikarthi@gmail.com',
-    From : document.getElementById("email").value,
+    From : 'slkarthi9@gmail.com',
     Subject : "New Query Raised from Website",
     Body : "Name : " + document.getElementById("name").value 
             + "<br><br> Email : " + document.getElementById("email").value
             + "<br><br> Phone No : " + document.getElementById("phone").value
             + "<br><br> Message : <br> " + document.getElementById("message").value
-  });
+  }).then(
+    message => alert(message)
+  );
 }
 
 // Function to display the popup
