@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
-    
   </head>
   <style>
     .mySlides {display: none}
@@ -20,13 +19,14 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top" style="position:fixed">
   <div class="w3-bar w3-black w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <!-- <a href="#home" class=" w3-bar-item w3-buton"><img src="images/grindex logo.png" style="width:100%;" alt="GEC"></a> -->
+    <a href="index.html"><img class="logo-img" src="images/grindex logo.png" width=auto height="60" ALT="align box" ALIGN=CENTER></a>
     <span class="company-name"><b>GRINDEX ENGINEERING COMPANY</b></span>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
       <a href="#customers" class="w3-bar-item w3-button"><i class="fa fa-th"></i> CUSTOMERS</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRODUCTS</a>
+      <a href="products.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRODUCTS</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -42,13 +42,13 @@
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
   <a href="#customers" onclick="w3_close()" class="w3-bar-item w3-button">CUSTOMERS</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRODUCTS</a>
+  <a href="products.html" onclick="w3_close()" class="w3-bar-item w3-button">PRODUCTS</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
 <!-- slide image -->
-<div style="padding-top: 59px;">
-  <div class="slideshow-container w3-light-grey">
+<div style="padding-top: 59px;" id="home">
+  <div class="slideshow-container gradient-gray">
 
     <div class="mySlides fade">
       <img src="images/pr01.JPG" style="width:100%;">
@@ -69,12 +69,13 @@
     <div class="mySlides fade">
       <img src="images/pr05.JPG" style="width:100%;">
     </div>
-
+<!-- 
     <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
+    <a class="next" onclick="plusSlides(1)">❯</a> -->
   </div>
 </div>
-<!-- Promo Section "Statistics" -->
+
+<!-- Promo Section "Statistics"
 <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
   <div class="w3-quarter">
     <span class="w3-xxlarge">14+</span>
@@ -92,18 +93,25 @@
     <span class="w3-xxlarge">150+</span>
     <br>Meetings
   </div>
-</div>
-<div class="transparent-container w3-container w3-grayscale-min" style="padding:128px 16px" id="home">
-  <div class="w3-container w3-display-left w3-text-white" style="padding:20px">
-    <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
-    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
-  </div> 
+</div> -->
+
+<div class="w3-container w3-center gradient-green">
+  <span class="w3-xxxlarge w3-hide-small w3-animate-fading">Start something that matters</span>
+  <span class="w3-large w3-hide-large w3-animate-fading">Start something that matters</span>
 </div>
 
 <!-- About Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="about">
+<div class="transparent-container" style="padding: 66px 16px" id="about" >
+  <div class="w3-container w3-text-white" style="padding:20px">
+    <span class="w3-xxlarge w3-center">About GEC</span><br><br><br>
+    <span class="w3-large">“ GRINDEX ENGINNERING COMPANY “ is a  Leading Indian manufacturer of testing & measuring instruments for Electrical Industries.<br><br> We have rich T&M experience with innovation and provide customers with the most reliable Instruments, Test Setup with solution and services with advanced technology.
+      <br><br>We offer products with high quality, aesthetic design, easy operation at reasonable price. 
+      </span>
+  </div> 
+</div>
+
+<!-- 
+<div class="w3-container gradient-gray" style="padding:128px 16px" >
   <h3 class="w3-center">ABOUT THE COMPANY</h3>
   <p class="w3-center w3-large">Key features of our company</p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
@@ -128,11 +136,11 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
     </div>
   </div>
-</div>
+</div> -->
 
-
-<!-- Promo Section - "We know design" -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px">
+<!-- 
+Promo Section - "We know design"
+<div class="w3-container gradient-gray" style="padding:128px 16px">
   <div class="w3-row-padding">
     <div class="w3-col m6">
       <h3>We know design.</h3>
@@ -143,55 +151,28 @@
       <img class="w3-image w3-round-large" src="https://www.w3schools.com/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Team Section -->
-<div class="slideshow-container w3-pale-green">
-  <div class="w3-container " style="padding:128px 16px" id="team">
-    <h3 class="w3-center">THE TEAM</h3>
-    <p class="w3-center w3-large">The ones who runs this company</p>
-    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John" style="width:100%">
-          <div class="w3-container">
-            <h3>John Doe</h3>
-            <p class="w3-opacity">CEO & Founder</p>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+<div class="w3-container gradient-green" >
+  <div class="w3-container " style="padding:16px 16px" >
+    <h3 class="w3-center" style="padding-top :20px;"><b>OUR PRODUCTS</b></h3>
+    <div class="w3-row-padding" style="margin-top:64px">
+      <div class="w3-half w3-margin-bottom">
+        <div class="w3-card w3-hover-shadow w3-round-large gradient-gray">
+          <img src="images/bg.jpg" alt="John" style="width:100%">
+          <div class="w3-container w3-center">
+            <h4>FULLY ELECTRIC AUTOMATIC MOTOR TYPE TEST PANEL</h4>
+            <p><button class="w3-button w3-black w3-animate-zoom w3-hover-red"  onclick="displayPopup(1)">Read More</button></p>
           </div>
         </div>
       </div>
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Jane" style="width:100%">
-          <div class="w3-container">
-            <h3>Anja Doe</h3>
-            <p class="w3-opacity">Art Director</p>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-          </div>
-        </div>
-      </div>
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Mike" style="width:100%">
-          <div class="w3-container">
-            <h3>Mike Ross</h3>
-            <p class="w3-opacity">Web Designer</p>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-          </div>
-        </div>
-      </div>
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="https://www.w3schools.com/w3images/team4.jpg" alt="Dan" style="width:100%">
-          <div class="w3-container">
-            <h3>Dan Star</h3>
-            <p class="w3-opacity">Designer</p>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+      <div class="w3-half w3-margin-bottom">
+        <div class="w3-card w3-hover-shadow w3-round-large gradient-gray">
+          <img src="images/bg.jpg" alt="John" style="width:100%">
+          <div class="w3-container w3-center">
+            <h4>AUTOMATIC MOTOR ROUTINE TEST PANEL</h4>
+            <p><button class="w3-button w3-black w3-animate-zoom w3-hover-red"  onclick="displayPopup(1)">Read More</button></p>
           </div>
         </div>
       </div>
@@ -199,10 +180,77 @@
   </div>
 </div>
 
+<!-- read more popup -->
+<div class="popup w3-card-4" id="popup1">
+  <h4>FULLY ELECTRIC AUTOMATIC MOTOR TYPE TEST PANEL</h4>
+  <div class="theight" style="overflow-x:auto;overflow:auto;">
+    <table class="w3-table-all">
+      <tr>
+        <th>Parameter</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Range</td>
+        <td>Up to 300 Amp</td>
+      </tr>
+      <tr>
+        <td>Enclosure (Panel) type</td>
+        <td>Tabletop, ATM, Cupboard</td>
+      </tr>
+      <tr>
+        <td>Test covered</td>
+        <td>Resistance, IR, HV, Locked rotor, No-load, Reduced voltage test</td>
+      </tr>
+      <tr>
+        <td>Computer interface</td>
+        <td>Rs 485</td>
+      </tr>
+      <tr>
+        <td>Suitable Motor type </td>
+        <td>1, 2 & 3 phase motors</td>
+      </tr>
+      <tr>
+        <td>Software</td>
+        <td>“ Java based” Clint server-based software with user management for all types of the motor with real-time data monitoring & production report generation. </td>
+      </tr>
+      <tr>
+        <td>Indication</td>
+        <td>LED tower lamp for Pass/ Fail & test in progress status</td>
+      </tr>
+      <tr>
+        <td>Protections</td>
+        <td>MCB/ MCCB for overload protection, Isolation transformer for auxiliary protection.</td>
+      </tr>
+      <tr>
+        <td>Output connections</td>
+        <td>Screwless terminals inside panel</td>
+      </tr>
+      <tr>
+        <td>Voltage control</td>
+        <td>Automatic though motorised dimmer according to master data</td>
+      </tr>
+      <tr>
+        <td>Mode of operation</td>
+        <td>Automatic & Manual both provided</td>
+      </tr>
+      <tr>
+        <td>Enclosure/ Panel colour</td>
+        <td>Siemens grey</td>
+      </tr>
+      <tr>
+        <td>Test time</td>
+        <td>180 sec. max for all tests. </td>
+      </tr>
+    </table>
+  </div>
+
+  <p class="w3-center"><button class="w3-button w3-black w3-animate-zoom w3-hover-red" onclick="hidePopup(1)"> Close </button></p>
+</div>
+<div class="popoverlay" id="overlay"></div>
 
 
 <!-- Work Section -->
-<!-- <div class="slideshow-container w3-light-grey">
+<!-- <div class="slideshow-container gradient-gray">
   <div class="w3-container " style="padding:128px 16px" id="work">
     <h3 class="w3-center">OUR WORK</h3>
     <p class="w3-center w3-large">What we've done for people</p>
@@ -239,9 +287,9 @@
   </div>
 </div> -->
 
-<div class="w3-container w3-light-grey" style="padding:128px 16px"  id="customers">
+<div class="w3-container gradient-gray" style="padding:128px 16px"  id="customers">
   <!-- <h1 class="w3-center">Many of top 10 BSE and NSE listed companies are our customers</h1> -->
-  <h3 class="w3-center w3-animate-zoom w3-padding-24">OUR CUSTOMERS </h3>
+  <h3 class="w3-center" style="padding-top :20px;"><b>OUR CUSTOMERS</b></h3>
   <div class="w3-center w3-responsive">
     <table style="width:100%">
   <tbody><tr>
@@ -266,7 +314,7 @@
       <td><a target="_blank" class="w3-hover-opacity" href="http://www.lubipumps.com/"><img src="customer/lubi.png" alt="Lubi Industries"></a></td>
       <td><a target="_blank" class="w3-hover-opacity" href="https://www.indiamart.com/sri-mahalakshmi-industries/"><img src="customer/maha.png" alt="Mahalakshmi Pumps"></a></td>
   </tr><tr>
-    <td><a target="_blank" class="w3-hover-opacity" href="https://www.facebook.com/majestic.pumps/"><img src="customer/majestic.png" alt="Majestic Pumps"></a></td>
+      <td><a target="_blank" class="w3-hover-opacity" href="https://www.facebook.com/majestic.pumps/"><img src="customer/majestic.png" alt="Majestic Pumps"></a></td>
       <td><a target="_blank" class="w3-hover-opacity" href="http://www.padmavahini.in/"><img src="customer/padmavahini.png" alt="Padmavahini"></a><br></td>
       <td><a target="_blank" class="w3-hover-opacity" href="http://www.paranaapumps.com/"><img src="customer/perfect.png" alt="Perfect"></a><br></td>
       <td><a target="_blank" class="w3-hover-opacity" href="https://www.indiamart.com/pilotindustries/"><img src="customer/pilot.png" alt="Pilot Industries"></a><br></td>
@@ -303,32 +351,7 @@
   </div>
 </div>
 
-<!-- Skills Section -->
-<div class="w3-container w3-pale-green w3-padding-64">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>Our Skills.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-      tempor incididunt ut labore et dolore.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-      tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-col m6">
-      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 <!-- Pricing Section
 <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
@@ -346,7 +369,7 @@
           <h2 class="w3-wide">$ 10</h2>
           <span class="w3-opacity">per month</span>
         </li>
-        <li class="w3-light-grey w3-padding-24">
+        <li class="gradient-gray w3-padding-24">
           <button class="w3-button w3-black w3-padding-large">Sign Up</button>
         </li>
       </ul>
@@ -362,7 +385,7 @@
           <h2 class="w3-wide">$ 25</h2>
           <span class="w3-opacity">per month</span>
         </li>
-        <li class="w3-light-grey w3-padding-24">
+        <li class="gradient-gray w3-padding-24">
           <button class="w3-button w3-black w3-padding-large">Sign Up</button>
         </li>
       </ul>
@@ -378,7 +401,7 @@
           <h2 class="w3-wide">$ 50</h2>
           <span class="w3-opacity">per month</span>
         </li>
-        <li class="w3-light-grey w3-padding-24">
+        <li class="gradient-gray w3-padding-24">
           <button class="w3-button w3-black w3-padding-large">Sign Up</button>
         </li>
       </ul>
@@ -393,7 +416,7 @@
     <p class="w3-center w3-large"><b>Lets get in touch.</b></p>
     <div class="w3-row">
       <div class="w3-half w3-container w3-margin-bottom" >
-        <div class="w3-container w3-pale-green w3-card-4 w3-round">
+        <div class="w3-container gradient-green w3-card-4 w3-round">
           <p class="w3-animate-left w3-large" ><b>Write to us for any Queries / Quote Request</b></p>
           <form id="contactForm" onsubmit="sendEmail(); reset(); return false" method="POST">
             <p><input class="w3-input w3-border" id="name" type="text" placeholder="Name" required name="name"></p>
@@ -406,19 +429,15 @@
               </button>
             </p>
           </form>
-          
-          <div class="popup w3-card-4" id="popup">
+          <div class="popup w3-card-4" id="popup0">
             <p class="w3-animate-zoom" ><b>Thank you for the submission, we'll reach u soon!</b></p>
             <p class="w3-center"><button class="w3-button w3-black w3-animate-zoom" onclick="hidePopup()"> OK </button></p>
           </div>
-
-          <div class="popoverlay" id="overlay"></div>
-
         </div> 
       </div>
 
       <div class="w3-half w3-container w3-margin-bottom" >
-        <div class="w3-container w3-pale-green w3-card-4 w3-round">
+        <div class="w3-container gradient-green w3-card-4 w3-round">
           <p class="w3-animate-left w3-large"><b>Our Spot in Coimbatore</b></p>
           <div style="margin-top:48px">
             <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
@@ -437,12 +456,12 @@
   <a href="#home"><div class="w3-button w3-black w3-hover-pale-green w3-circle w3-xlarge w3-card-4" style="transform:rotate(90deg)">❮</div></a>
 </div>
 
-<!-- <p class="w3-center"><a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a></p> -->
+<!-- <p class="w3-center"><a href="#home" class="w3-button gradient-gray"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a></p> -->
 <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
 <footer class="w3-dark-grey w3-padding-16">
   <div class="w3-container">
     
-    <div class="w3-row desktopview">
+    <!-- <div class="w3-row desktopview">
       <div class="w3-half w3-container w3-margin-bottom" >
         <h3 class="w3-center" ><b>ABOUT</b></h3>
         <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
@@ -460,7 +479,7 @@
           <i class="fa fa-linkedin w3-hover-opacity"></i>
         </div>
       </div>
-    </div>
+    </div> -->
     <p class="w3-center w3-margin small w3-text-white">©2024, Grindex Engineering Company. All Rights Reserved.</p>
   </div>
 </footer>
