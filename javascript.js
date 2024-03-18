@@ -79,3 +79,19 @@ function hidePopup(n) {
 //   displayPopup(0);
   
 // });
+
+function CopyToClipboard(n){
+  var r = document.createRange();
+  r.selectNode(document.getElementById("copy"+n));
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(r);
+  try {
+      document.execCommand('copy');
+      window.getSelection().removeAllRanges();
+      // console.log('Successfully copy text: hello world ' + r);
+      let x = document.getElementById("message");
+      x.value = "Hi, Please Send a Quote for this product below <br> <br>"+r;
+  } catch (err) {
+      console.log('Unable to copy!');
+  }
+}
