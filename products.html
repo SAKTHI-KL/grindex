@@ -24,7 +24,7 @@
     <span class="company-name"><b>GRINDEX ENGINEERING COMPANY</b></span>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+      <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
       <!-- <a href="#customers" class="w3-bar-item w3-button"><i class="fa fa-th"></i> CUSTOMERS</a>
       <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>  -->
@@ -229,12 +229,11 @@
 
 <p class="w3-center"><button class="w3-button w3-black w3-animate-zoom w3-hover-red" onclick="hidePopup(1)"> Close </button></p>
 </div>
-<div class="popoverlay" id="overlay"></div>
+
 
 
     <!-- Contact Section -->
     <div class="w3-container w3-quarter" id="contact">
-      <div class="w3-row">
         <div class="w3-container w3-margin-bottom" style="padding: 0px 0px;" >
           <div class="w3-container gradient-green w3-card-4 w3-round">
             <p class="w3-animate-zoom w3-large" ><b>Write to us for any Queries / Quote Request</b></p>
@@ -244,7 +243,7 @@
               <p><input class="w3-input w3-border" id="phone" type="tel" placeholder="Mobile Number" required name="phone"></p>
               <p><textarea class="w3-input w3-border" id="message" placeholder="Message" style="height: 178px;" required name="message"></textarea></p>
               <p>
-                <button class="w3-button w3-black" type="submit">
+                <button class="w3-button w3-black" type="submit" onclick="displayPopup(0)">
                   <i class="fa fa-paper-plane"></i> SEND MESSAGE
                 </button>
               </p>
@@ -254,12 +253,12 @@
               <p class="w3-animate-zoom" ><b>Thank you for the submission, we'll reach u soon!</b></p>
               <p class="w3-center"><button class="w3-button w3-black w3-animate-zoom" onclick="hidePopup(0)"> OK </button></p>
             </div>
-
+            <div class="popoverlay" id="overlay"></div>
             
 
           </div> 
         </div>
-      </div>
+      
     </div>  
   </div>
 </div>

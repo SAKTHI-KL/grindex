@@ -52,8 +52,9 @@ function sendEmail(){
             + "<br><br> Email : " + document.getElementById("email").value
             + "<br><br> Phone No : " + document.getElementById("phone").value
             + "<br><br> Message : <br> " + document.getElementById("message").value
-  }).then(
-    message => alert(message)
+  }
+  // ).then(
+  //   message => alert(message)
   );
 }
 
@@ -70,11 +71,11 @@ function hidePopup(n) {
 }
 
 // Submit event listener for the form
-document.getElementById("contactForm").addEventListener("submit", function(event){
-  event.preventDefault(); // Prevent the default form submission
+// document.getElementById("contactForm").addEventListener("submit", function(event){
+//   event.preventDefault(); // Prevent the default form submission
 
-  // Here you would typically submit the form data to a server using AJAX or fetch
-  // For this example, we'll just display the popup
-  displayPopup(0);
+//   // Here you would typically submit the form data to a server using AJAX or fetch
+//   // For this example, we'll just display the popup
+//   displayPopup(0);
   
-});
+// });
