@@ -37,7 +37,65 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+function plusSlides(n) {
+  showSlide(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlide(slideIndex = n);
+}
+function showSlide(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+
+let slideshotIndex = 0;
+showSlidesshot();
+
+
+function showSlidesshot() {
+  let i;
+  let slideshot = document.getElementsByClassName("mySlideshot");
+  for (i = 0; i < slideshot.length; i++) {
+    slideshot[i].style.display = "none";
+  }
+  slideshotIndex++;
+  if (slideshotIndex > slideshot.length) {slideshotIndex = 1}
+  slideshot[slideshotIndex-1].style.display = "block";
+  setTimeout(showSlidesshot, 5000); // Change image every 5 seconds
+}
+function plusSlideshot(n) {
+  showSlideshot(slideshotIndex += n);
+}
+function currentSlide(n) {
+  showSlideshot(slideshotIndex = n);
+}
+function showSlideshot(n) {
+  var i;
+  var slideshot = document.getElementsByClassName("mySlideshot");
+  var dots = document.getElementsByClassName("dothot");
+  if (n > slideshot.length) { slideshotIndex = 1 }
+  if (n < 1) { slideshotIndex = slideshot.length }
+  for (i = 0; i < slideshot.length; i++) {
+      slideshot[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slideshot[slideshotIndex - 1].style.display = "block";
+  dots[slideshotIndex - 1].className += " active";
 }
 
 function sendEmail(){

@@ -13,7 +13,14 @@
   <style>
     .mySlides {display: none}
     img {vertical-align: middle;}
-
+    @font-face{
+      font-family: great;
+      src:url(Font/great-vibes/GreatVibes-Regular.ttf);
+    }
+    @font-face{
+      font-family: Audio;
+      src:url(Font/audiowide/Audiowide-Regular.ttf);
+    }
   </style>
 <body>
 
@@ -63,12 +70,16 @@
       <img src="images/banner3.jpg" style="width:100%;">
     </div>
     
-    
-<!-- 
     <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a> -->
+    <a class="next" onclick="plusSlides(1)">❯</a>
   </div>
 </div>
+<!-- <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div> -->
 
 <!-- Promo Section "Statistics"
 <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
@@ -92,7 +103,7 @@
 
 <div class="w3-container w3-center gradient-green">
   <span class="w3-xxxlarge w3-hide-small w3-animate-fading" style="font-family: great;"><b>Innovation to Execution</b></span>
-  <span class="w3-large w3-hide-large w3-animate-fading"><b>Innovation to Execution</b></span>
+  <span class="w3-large w3-hide-large w3-animate-fading" style="font-family: great;"><b>Innovation to Execution</b></span>
 </div>
 
 <!-- About Section -->
@@ -196,7 +207,25 @@ Promo Section - "We know design"
 
 <!-- read more popup -->
 <div class="popup w3-card-4" id="popup1">
-  <div id="copy1"><h4 style="font-family: Audio;">FULLY ELECTRIC AUTOMATIC MOTOR TYPE TEST PANEL</h4>
+  <div class="slideshow-container gradient-gray" id="slideshot">
+
+    <div class="mySlideshot fade">
+      <img src="images/pr01.JPG" style="width:100%;">
+    </div>
+    
+    <div class="mySlideshot fade">
+      <img src="images/pr03.JPG" style="width:100%;">
+    </div>
+    
+    <div class="mySlideshot fade">
+      <img src="images/pr02.JPG" style="width:100%;">
+    </div>
+    
+    <a class="prev" onclick="plusSlideshot(-1)">❮</a>
+    <a class="next" onclick="plusSlideshot(1)">❯</a>
+  </div>
+  <br>
+  <div id="copy1"><h4 id="mvtext" style="font-family: Audio;">FULLY ELECTRIC AUTOMATIC MOTOR TYPE TEST PANEL</h4>
     <div class="theight" style="overflow-x:auto;overflow:auto;">
       <table class="w3-table-all">
         <tr>

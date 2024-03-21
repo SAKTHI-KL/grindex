@@ -43,6 +43,12 @@ body, html {
   margin: auto;
 }
 
+#slideshot{
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
 .logo-img{
   float: left;
   position: relative;
@@ -76,14 +82,50 @@ body, html {
   background-color: rgba(0,0,0,0.8);
 }
 
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  /* <div class="text">Caption Text</div> */
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
 /* Fading animation */
 .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
   animation-name: fade;
-  animation-duration: 0.5s;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 .theight{
-  height: 450px;
+  height: 300px;
 }
 
 #contact{
@@ -92,14 +134,16 @@ body, html {
   padding-top: 20px;
 }
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
+
+
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 360px) {
-  .prev, .next{font-size: 11px}
+@media only screen and (max-width: 450px) {
+  .prev, .next, .text{font-size: 11px}
+  .dot{
+    height: 10px;
+     width: 10px;
+   }
   }
 
 @media screen and (max-width: 768px) {
@@ -110,25 +154,18 @@ body, html {
     display: none;
   }
   .theight{
-    height: 400px;
+    height: 300px;
   }
   #contact{
     position:relative;
   }
-  
-}
-@media only screen and (min-width: 768px){
+  #mvtext{
+    font-size: 13px;
+  }
   
 }
 
-@font-face{
-  font-family: great;
-  src:url(Font/great-vibes/GreatVibes-Regular.ttf);
-}
-@font-face{
-  font-family: Audio;
-  src:url(Font/audiowide/Audiowide-Regular.ttf);
-}
+
 .popup {
   display: none;
   position: fixed;
