@@ -134,7 +134,14 @@ body, html {
   padding-top: 20px;
 }
 
-
+.wrapper{
+  max-height: 120px;
+  display: flex;
+  overflow-x: auto;
+}
+.wrapper::-webkit-scrollbar{
+  width: 0;
+}
 
 
 /* On smaller screens, decrease text size */

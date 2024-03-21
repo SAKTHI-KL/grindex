@@ -61,42 +61,7 @@ function showSlide(n) {
   dots[slideIndex - 1].className += " active";
 }
 
-let slideshotIndex = 0;
-showSlidesshot();
 
-
-function showSlidesshot() {
-  let i;
-  let slideshot = document.getElementsByClassName("mySlideshot");
-  for (i = 0; i < slideshot.length; i++) {
-    slideshot[i].style.display = "none";
-  }
-  slideshotIndex++;
-  if (slideshotIndex > slideshot.length) {slideshotIndex = 1}
-  slideshot[slideshotIndex-1].style.display = "block";
-  setTimeout(showSlidesshot, 5000); // Change image every 5 seconds
-}
-function plusSlideshot(n) {
-  showSlideshot(slideshotIndex += n);
-}
-function currentSlide(n) {
-  showSlideshot(slideshotIndex = n);
-}
-function showSlideshot(n) {
-  var i;
-  var slideshot = document.getElementsByClassName("mySlideshot");
-  var dots = document.getElementsByClassName("dothot");
-  if (n > slideshot.length) { slideshotIndex = 1 }
-  if (n < 1) { slideshotIndex = slideshot.length }
-  for (i = 0; i < slideshot.length; i++) {
-      slideshot[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slideshot[slideshotIndex - 1].style.display = "block";
-  dots[slideshotIndex - 1].className += " active";
-}
 
 function sendEmail(){
   Email.send({
