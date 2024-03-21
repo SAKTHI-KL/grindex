@@ -30,6 +30,7 @@ body, html {
   color: rgb(255, 255, 255);
   font-size: 25px;
   display: inline; /* Display by default */
+  font-family:Audio;
 }
 .desktopview{
   display: flex;
@@ -120,6 +121,14 @@ body, html {
   
 }
 
+@font-face{
+  font-family: great;
+  src:url(Font/great-vibes/GreatVibes-Regular.ttf);
+}
+@font-face{
+  font-family: Audio;
+  src:url(Font/audiowide/Audiowide-Regular.ttf);
+}
 .popup {
   display: none;
   position: fixed;
