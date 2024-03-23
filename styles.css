@@ -126,6 +126,7 @@ body, html {
 
 .theight{
   height: 270px;
+  font-weight:bolder;
 }
 
 #contact{
@@ -143,7 +144,7 @@ body, html {
    }
   }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .company-name{
     display: none;
   }
@@ -163,7 +164,42 @@ body, html {
     width: 330px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .company-name{
+    display: none;
+  }
+}
 
+@media screen and (min-width: 769px) {
+  .popslide-container{
+    height: auto;
+    width: 300px;
+    
+  }
+}
+@media screen and (min-width: 1024px) {
+  .popslide-container{
+    height: auto;
+    width: 300px;
+    margin-left: 100px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .popslide-container{
+    height: auto;
+    width: 300px;
+    margin-left: 200px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .popslide-container{
+    height: auto;
+    width: 600px;
+    margin-left: 320px;
+  }
+}
 
 .popup {
   display: none;
@@ -188,6 +224,7 @@ body, html {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
 }
+
 
 .gradient-green{color:#000!important;background: linear-gradient(90deg, rgb(0, 166, 0, 1) 0%, rgb(24, 229, 24,1) 25%, rgb(79, 255, 79,1) 50%, rgba(24, 229, 24,1) 75%, rgba(0, 166, 0, 1) 100%)!important}
 .gradient-gray{color:#000!important;background: linear-gradient(90deg, rgba(214,214,214,1) 0%, rgba(241,241,241,1) 25%, rgba(255,255,255,1) 50%, rgba(241,241,241,1) 75%, rgba(214,214,214,1) 100%)!important}
