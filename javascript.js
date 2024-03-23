@@ -62,9 +62,9 @@ function showSlide(n) {
 }
 
 let popslideIndex = [1,1];
-let slideId = ["mySlides1", "mySlides2"]
+let slideId = ["mySlides1", "mySlides11"]
 showpopSlides(1, 0);
-// showpopSlides(1, 1);
+showpopSlides(1, 1);
 
 function pluspopSlides(n, no) {
   showpopSlides(popslideIndex[no] += n, no);
