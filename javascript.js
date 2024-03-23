@@ -48,17 +48,37 @@ function currentSlide(n) {
 function showSlide(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  // var dots = document.getElementsByClassName("dot");
   if (n > slides.length) { slideIndex = 1 }
   if (n < 1) { slideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
+  // for (i = 0; i < dots.length; i++) {
+  //     dots[i].className = dots[i].className.replace(" active", "");
+  // }
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+  // dots[slideIndex - 1].className += " active";
+}
+
+let popslideIndex = [1,1];
+let slideId = ["mySlides1", "mySlides2"]
+showpopSlides(1, 0);
+// showpopSlides(1, 1);
+
+function pluspopSlides(n, no) {
+  showpopSlides(popslideIndex[no] += n, no);
+}
+
+function showpopSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {popslideIndex[no] = 1}    
+  if (n < 1) {popslideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[popslideIndex[no]-1].style.display = "block";  
 }
 
 
